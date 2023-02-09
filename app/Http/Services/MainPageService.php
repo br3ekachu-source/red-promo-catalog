@@ -30,6 +30,7 @@ class MainPageService {
         ->join('reviews', 'products.id', '=', 'reviews.product_id')
         ->selectRaw('categories.id, categories.name, count(reviews.id) as count_reviews')
         ->groupBy('categories.id')
+        ->orderByDesc('count_reviews')
         ->limit(5)
         ->get();
 

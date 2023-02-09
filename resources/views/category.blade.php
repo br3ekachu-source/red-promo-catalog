@@ -21,7 +21,7 @@
                 'sort' => 'count', 
                 'type' => $sort['field']=='count' && $sort['type']=='asc'?'desc':'asc' 
                 ]) }}" role="button">
-                По обсуждениям
+                По комментариям
             </a>
         </div>
             <div class="table-responsive">
