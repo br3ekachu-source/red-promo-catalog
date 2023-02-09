@@ -117,7 +117,7 @@
                     @endforeach
                     @foreach ($pageInfo->searchedProducts as $product)
                         <tr>
-                            <td><a href="">{{ $product->name }}</a></td>
+                            <td><a href="{{ route('product.index', ['id' => $product->id]) }}">{{ $product->name }}</a></td>
                             <td>Лот</td>
                         </tr>
                     @endforeach
